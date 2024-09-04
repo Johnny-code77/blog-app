@@ -34,11 +34,11 @@ const posts = [
 
 const BlogPage = () => {
     return (
-        <section className="py-32">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <section className="py-10">
+            <div className="relative z-[1000] max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="space-y-5 sm:text-center sm:max-w-md sm:mx-auto">
                     <h1 className="text-gray-300 text-3xl font-extrabold sm:text-4xl">Latest blog posts</h1>
-                    <p className="text-gray-600">Blogs that are loved by the community. Updated every hour.</p>
+                    <p className="text-gray-400">Blogs that are loved by the community. Updated every hour.</p>
                     <form onSubmit={(e) => e.preventDefault()} className="items-center justify-center gap-3 sm:flex">
                         <div className="relative">
                             <svg className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
