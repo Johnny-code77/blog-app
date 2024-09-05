@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
                     />
                 </svg>
             ),
-            contact: "Support@example.com",
+            contact: "molapo@gmail.com",
         },
         {
             icon: (
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
                     />
                 </svg>
             ),
-            contact: "+1 (555) 000-000",
+            contact: "+266 63832569",
         },
         {
             icon: (
@@ -63,13 +63,13 @@ const Contact: React.FC = () => {
                     />
                 </svg>
             ),
-            contact: "Mountain View, California, United States.",
+            contact: "Moshoeshoe 11, Maseru , Lesotho.",
         },
     ];
 
     return (
-        <main className="py-14">
-            <div className="max-w-screen-xl mx-auto px-4 text-gray-300 md:px-8">
+        <main className="py-14 relative z-[1000]">
+            <div className="max-w-screen-lg mx-auto px-4 text-gray-300 md:px-8">
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3">
                         <h3 className="text-indigo-600 font-semibold">Contact</h3>
