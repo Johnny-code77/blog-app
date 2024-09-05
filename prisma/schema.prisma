@@ -1,8 +1,6 @@
-// prisma/schema.prisma
-
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = env("DATABASE_URL") // Ensure the .env file has a valid MongoDB connection string
 }
 
 generator client {
@@ -10,8 +8,8 @@ generator client {
 }
 
 model Post {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId // MongoDB uses ObjectId as the default ID type
   title     String
   content   String
-  createdAt DateTime @default(now()) @map("created_at")
+  createdAt DateTime @default(now()) @map("created_at") // MongoDB allows mapping fields using @map
 }

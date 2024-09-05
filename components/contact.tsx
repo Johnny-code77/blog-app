@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3">
                         <h3 className="text-indigo-600 font-semibold">Contact</h3>
-                        <p className="text-gray-300 text-3xl font-semibold sm:text-4xl">
+                        <p className="text-gray-200 text-3xl font-semibold sm:text-4xl">
                             Let us know how we can help
                         </p>
                         <p>
@@ -125,7 +125,7 @@ const Contact: React.FC = () => {
                                 <label className="font-medium">Message</label>
                                 <textarea
                                     required
-                                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                    className="w-full mt-2 h-36 px-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                 ></textarea>
                             </div>
                             <button

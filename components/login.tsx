@@ -52,7 +52,7 @@ const LoginPage: NextPage = () => {
                     <input
                       id="remember"
                       type="checkbox"
-                      className="w-4 h-4 border border-gray-600 rounded bg-gray-700 focus:ring-3 focus:ring-blue-500"
+                      className="w-4 h-4 border border-gray-600 rounded bg-gray-700 focus:ring-3 focus:ring-blue-500 bg-transparent"
                     />
                   </div>
                   <div className="ml-3 text-sm">

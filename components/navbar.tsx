@@ -37,16 +37,16 @@ const Navbar = () => {
       <div className="flex-grow flex items-center justify-center">
         <ul className="flex space-x-4">
           <li>
-            <Link href="/" className="text-white hover:text-gray-200">Home</Link>
+            <Link href="/" className="text-white hover:text-gray-50">Home</Link>
           </li>
           <li>
-            <Link href="/blog" className="text-white hover:text-gray-200">Blog</Link>
+            <Link href="/blog" className="text-white hover:text-gray-50">Blog</Link>
           </li>
           <li>
-            <Link href="/about" className="text-white hover:text-gray-200">About</Link>
+            <Link href="/about" className="text-white hover:text-gray-50">About</Link>
           </li>
           <li>
-            <Link href="/contact" className="text-white hover:text-gray-200">Contact</Link>
+            <Link href="/contact" className="text-white hover:text-gray-50">Contact</Link>
           </li>
         </ul>
       </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
             value={searchQuery}
             onChange={handleSearchChange}
             placeholder="Search..."
-            className="px-3 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            className="px-3 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-transparent"
           />
           <button
             type="submit"
