@@ -78,7 +78,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Feature List Section */}
       <div className="relative z-10 p-4">
         <div className="mt-12 max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">Features</h2>
