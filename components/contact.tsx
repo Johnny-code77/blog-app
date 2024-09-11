@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                             Let us know how we can help
                         </p>
                         <p>
-                            We’re here to help and answer any questions you might have. We look forward to hearing from you! Please fill out the form or use the contact information below.
+                            We&apos;re here to help and answer any questions you might have. We look forward to hearing from you! Please fill out the form or use the contact information below.
                         </p>
                         <div>
                             <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">

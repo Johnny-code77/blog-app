@@ -1,9 +1,7 @@
 import React from 'react';
 import { mockPosts } from './mockData'; 
-import PostList from './postlist'; // Adjust the path if needed
 import Link from 'next/link';
-import { CoolMode } from './magicui/cool-mode';
-import { Button } from './ui/button';
+
 
 const features = [
   { title: 'Fast Performance', description: 'Experience blazing fast speeds with our optimized code.' },
