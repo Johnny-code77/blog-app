@@ -13,3 +13,4 @@ model Post {
   content   String
   createdAt DateTime @default(now()) @map("created_at") // MongoDB allows mapping fields using @map
 }
+vEEWC5gZMNA0iNev

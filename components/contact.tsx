@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
@@ -7,24 +7,28 @@ const Contact: React.FC = () => {
         fullName: '',
         email: '',
         company: '',
-        message: ''
+        message: '',
     });
+
+    // State for form submission status
+    const [submissionStatus, setSubmissionStatus] = useState<string | null>(null);
 
     // Handle change in input fields
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
-            [name]: value
+            [name]: value,
         });
     };
 
     // Handle form submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        
+        setSubmissionStatus(null); // Reset submission status
+
         try {
-            const response = await fetch('http://localhost:5000/submit-form', {
+            const response = await fetch('http://localhost:3000/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -33,12 +37,12 @@ const Contact: React.FC = () => {
             });
 
             if (response.ok) {
-                alert('Form submitted successfully');
+                setSubmissionStatus('Form submitted successfully!');
             } else {
-                alert('Error submitting form');
+                setSubmissionStatus('Error submitting form. Please try again.');
             }
         } catch (error) {
-            alert('Error submitting form');
+            setSubmissionStatus('Error submitting form. Network issue.');
         }
     };
 
@@ -134,7 +138,14 @@ const Contact: React.FC = () => {
                                     className="w-full mt-2 h-36 px-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                 ></textarea>
                             </div>
-                            <button type="submit" className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">Submit</button>
+                            <button type="submit" className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
+                                Submit
+                            </button>
+                            {submissionStatus && (
+                                <p className="mt-4 text-sm text-center text-gray-300">
+                                    {submissionStatus}
+                                </p>
+                            )}
                         </form>
                     </div>
                 </div>
