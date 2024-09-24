@@ -16,6 +16,10 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
+<<<<<<< HEAD
+=======
+    "firebase": "^10.13.2",
+>>>>>>> fef981c16d3539af9fef2f82dc22b71829674a11
     "framer-motion": "^11.3.31",
     "lucide-react": "^0.438.0",
     "mongodb": "^6.8.0",
